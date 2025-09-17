@@ -22,5 +22,11 @@ const shop ={
     isNew: false
 };
 console.log(shop);
+
+// object to string convert
 const shopJSON=JSON.stringify(shop);
 console.log(shopJSON);
+
+// string to object convert
+const shopObj=JSON.parse(shopJSON);
+console.log(shopObj);
