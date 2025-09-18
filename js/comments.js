@@ -4,3 +4,15 @@ const loadComments = () =>{
     .then(data => console.log(data))
     .catch(error => console.error('Error happened', error))
 }
+
+
+const loadComments2 = async() =>{
+    try{
+        const res = await fetch('https://jsonplaceholder.typicode.com/comments');
+        const data = await res.json();
+        console.log(data);
+    }
+    catch(error){
+        console.log('Data load error.');
+    }
+}
