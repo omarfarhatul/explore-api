@@ -17,5 +17,6 @@ function displayPosts(posts){
         postscontainer.appendChild(postdiv);
     }
 }
-
 loadPosts();
+
+
